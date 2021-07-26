@@ -1,0 +1,18 @@
+CREATE DATABASE posts;
+
+USE posts;
+
+CREATE TABLE post(
+id INT NOT NULL AUTO_INCREMENT,
+userId INT,
+title VARCHAR(100),
+body TEXT,
+PRIMARY KEY(id)
+);
+CREATE TABLE comments(
+id INT NOT NULL AUTO_INCREMENT,
+userId INT,
+title VARCHAR(200),
+body TEXT,
+PRIMARY KEY(id)
+);
